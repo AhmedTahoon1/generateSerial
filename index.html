@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project #10 Generate Serial</title>
+  </head>
+  <body>
+    <h1>Generate Serial App</h1>
+    <form action="./index.html" method="get">
+      <input type="text" name="serial" id="serial" placeholder="Serial Here" readonly>
+      <button type="submit">Generate Serial</button>
+    </form>
+    <div class="copied">copied</div>
+    <style>
+      body{background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      margin: 10% 0;}
+    h1{color: #333;}
+      form{display: flex;
+      flex-direction: column;
+      width: 300px;
+      background-color:darkslategray;
+      padding: 20px;}
+      form input{
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: 1em;
+        border:1px solid #333;
+        cursor: copy;
+      }
+      form button{
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: 1em;
+        color: #333;
+        border:1px solid #333;
+        cursor: pointer;
+      }
+      .copied{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        padding: 10px 20px;
+        background-color: brown;
+        color: #FEFEFE;
+        display: none;
+      }
+    </style>
+    <script src="./app.js"></script>
+  </body>
+</html>
